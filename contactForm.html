@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="aset1/style/style.css" />
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <section>
+      <nav class="nav">
+        <div class="kiri">
+          <div class="logo"><i class="fa-solid fa-palette"></i></div>
+          <div class="home"><a href="index.html">Home</a></div>
+          <div class="project"><a href="https://day-5-count-post-duration.vercel.app/">My Project</a></div>
+        </div>
+        <div class="kanan">
+          <button><a href="#terhubung">Contact Me</a></button>
+        </div>
+      </nav>
+    </section>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal Contact Form -->
+    <h3 id="terhubung">GET IN TOUCH</h3>
+    <form>
+      <div class="container">
+        <div class="container2">
+          <div class="nama">
+            <label for="name">Name</label>
+            <input id="name" type="text" />
+          </div>
+          <div class="surel">
+            <label for="email">Email</label>
+            <input id="email" type="email" />
+          </div>
+          <div class="nomorHp">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" />
+          </div>
+          <div class="topik">
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option></option>
+              <option>Commission</option>
+              <option>Colaboration</option>
+              <option>Art Raffle</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Your Message</label>
+            <textarea id="message"></textarea>
+          </div>
+          <div class="submit">
+            <button type="button" onclick="getData()"><a class="kirim">submit</a></button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Akhir Contact form -->
+
+    <script src="aset1/script/script.js"></script>
+  </body>
+</html>

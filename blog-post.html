@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input My Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="aset2/style/style2.css" />
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <section>
+      <nav class="nav">
+        <div class="kiri">
+          <div class="logo"><i class="fa-solid fa-palette"></i></div>
+          <div class="home"><a href="index.html">Home</a></div>
+          <div class="project"><a href="#" style="font-weight: bold">My Project</a></div>
+        </div>
+        <div class="kanan">
+          <button><a href="contactForm.html">Contact Me</a></button>
+        </div>
+      </nav>
+    </section>
+    <!-- Akhir Navbar -->
+
+    <div class="container">
+      <div class="containerForm">
+        <!-- Awal Form -->
+        <div class="form">
+          <h2>ADD MY PROJECT</h2>
+          <form onsubmit="getData(event)">
+            <!-- nama proyek -->
+            <label for="name">Project Name</label>
+            <input id="name" type="text" />
+            <!-- Tanggal Mulai dan Berakhir -->
+            <div class="waktuPengerjaan">
+              <div class="start">
+                <!-- start date -->
+                <label for="startDate">Start Date</label>
+                <input id="startDate" type="date" required />
+              </div>
+              <div class="end">
+                <!-- end date -->
+                <label for="endDate">End Date</label>
+                <input id="endDate" type="date" />
+              </div>
+            </div>
+            <!-- Deskripsi -->
+            <label for="description">Description</label>
+            <textarea id="description" style="resize: none"></textarea>
+            <!-- Equipment -->
+            <label>Equipment</label>
+            <div class="equipment">
+              <span class="alat"><input type="checkbox" id="alat1" /><label for="alat1"> Photoshop</label></span>
+              <span class="alat"><input type="checkbox" id="alat2" /> <label for="alat2"> Studio Paint</label></span>
+              <span class="alat"><input type="checkbox" id="alat3" /> <label for="alat3"> Adobe Ilustrator</label></span>
+              <span class="alat"><input type="checkbox" id="alat4" /><label for="alat4"> Pinterest</label></span>
+            </div>
+            <!-- Unggah foto -->
+            <div class="upload">
+              <label for="upload">Upload Image</label>
+              <div class="paper">
+                <input id="upload" type="file" />
+                <i class="fa-solid fa-paperclip"></i>
+              </div>
+            </div>
+            <!-- tombol submit -->
+            <div class="buttonForm">
+              <button>submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Akhir Form -->
+
+      <!-- Awal Preview -->
+      <div class="containerPreview">
+        <h2>MY PROJECT</h2>
+        <!-- pembungkus card -->
+        <div id="containerCard"></div>
+      </div>
+      <!-- Akhir Preview -->
+    </div>
+    <!-- script -->
+    <script src="aset2/script/script.js"></script>
+  </body>
+</html>
