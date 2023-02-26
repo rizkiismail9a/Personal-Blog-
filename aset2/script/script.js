@@ -105,7 +105,6 @@ function cekList(datas) {
 const calculateDuration = (startDate, endDate) => {
   if (endDate < startDate) {
     alert("End Date Should be bigger");
-    return;
   }
 
   const durationDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
