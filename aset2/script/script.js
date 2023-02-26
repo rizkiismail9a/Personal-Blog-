@@ -1,7 +1,7 @@
 let datas = [
   {
-    image: "aset/images/Quality time1.png",
-    nama: "Ya Allah, Berilah Kemudahan",
+    image: "aset2/images/Quality time1.png",
+    nameTitle: "Ya Allah, Berilah Kemudahan",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repudiandae explicabo recusandae aperiam sit voluptas?",
     equipment1: true,
     equipment2: true,
@@ -9,16 +9,16 @@ let datas = [
     date: "25 hari",
   },
   {
-    image: "aset/images/Quality time1.png",
-    nama: "Ya Allah, Berilah Kemudahan",
+    image: "aset2/images/Quality time1.png",
+    nameTitle: "Ya Allah, Berilah Kemudahan",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repudiandae explicabo recusandae aperiam sit voluptas?",
     equipment1: true,
     equipment2: true,
     date: "2 bulan",
   },
   {
-    image: "aset/images/Quality time1.png",
-    nama: "Ya Allah, Berilah Kemudahan",
+    image: "aset2/images/Quality time1.png",
+    nameTitle: "Ya Allah, Berilah Kemudahan",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repudiandae explicabo recusandae aperiam sit voluptas?",
     equipment1: true,
     date: "1 Tahun",
@@ -28,7 +28,7 @@ let datas = [
 function getData(event) {
   event.preventDefault();
 
-  const nama = document.getElementById("name").value;
+  const nameTitle = document.getElementById("name").value;
   const description = document.getElementById("description").value;
   const equipment1 = document.getElementById("alat1").checked;
   const equipment2 = document.getElementById("alat2").checked;
@@ -41,7 +41,7 @@ function getData(event) {
 
   image = URL.createObjectURL(image[0]);
   const data = {
-    nama,
+    nameTitle,
     date,
     description,
     equipment1,
@@ -51,7 +51,6 @@ function getData(event) {
     image,
   };
 
-  
   datas.push(data);
   showData();
 }
@@ -66,7 +65,7 @@ const showData = () => {
     </div>
 
     <div class="judulCard">
-      <h3><a href="blogPage.html" style="color: black">${datas[i].nama}</a></h3>
+      <h3><a href="blogPage.html" style="color: black">${datas[i].nameTitle}</a></h3>
     </div>
 
     <div class="duration">Duration: ${datas[i].date}</div>
@@ -105,7 +104,7 @@ function cekList(datas) {
 
 const calculateDuration = (startDate, endDate) => {
   if (endDate < startDate) {
-    alert("End Date Should");
+    alert("End Date Should be bigger");
     return;
   }
 
@@ -117,6 +116,9 @@ const calculateDuration = (startDate, endDate) => {
   } else if (durationDays > 30) {
     const durationMonths = Math.floor(durationDays / 30);
     duration = `${durationMonths} Months`;
+  } else if (durationDays > 7) {
+    const durationWeeks = Math.floor(durationDays / 7);
+    duration = `${durationWeeks} Weeks`;
   } else {
     duration = `${durationDays} Days`;
   }
