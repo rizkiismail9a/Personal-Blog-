@@ -65,7 +65,7 @@ const showData = () => {
     </div>
 
     <div class="judulCard">
-      <h3><a href="blogPage.html" style="color: black">${datas[i].nameTitle}</a></h3>
+      <h3><a href="blog-detail.html" style="color: black">${datas[i].nameTitle}</a></h3>
     </div>
 
     <div class="duration">Duration: ${datas[i].date}</div>
