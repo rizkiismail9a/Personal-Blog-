@@ -1,4 +1,6 @@
-/* Awal Navbar */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(231, 231, 231);
   margin: 0;
@@ -32,7 +34,7 @@ a {
 }
 .logo {
   font-size: 20px;
-  color: rgb(173, 42, 42);
+  color: rgb(189, 56, 56);
 }
 .home a,
 .project a {
@@ -55,63 +57,59 @@ div.kanan {
   color: rgb(221, 221, 221);
   font-size: 12px;
 }
-/* Akhir Navbar */
+/* Awal Form*/
 
-/* Awal Gambar dan Info */
-.judul {
-  display: flex;
-  justify-content: center;
-}
-h1 {
+h3 {
   text-align: center;
-  margin: 30px;
+  margin: 65px 65px 40px;
 }
 .container {
+  background-color: rgb(231, 231, 231);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  /* background-color: aquamarine; */
-  margin: auto;
-  width: 1100px;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-.gambar {
+.container2 {
   display: flex;
-  /* background-color: beige; */
+  flex-direction: column;
+  width: 400px;
 }
 
-.container .gambar img {
-  width: 600px;
+.container2 div {
+  margin: 10px;
+}
+input,
+select,
+textarea {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -6px #808080;
+}
+input,
+select {
+  height: 25px;
 }
 
-.info {
-  font-size: 1.2rem;
-  /* background-color: bisque; */
-  width: 450px;
-}
-
-p i {
-  margin-right: 15px;
-  color: black;
-}
-
-.duration p,
-.equipment p {
-  color: rgb(133, 133, 133);
-}
-
-h4 {
-  margin-bottom: 0;
-}
-.equipment {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+textarea {
+  resize: none;
   height: 100px;
 }
 
-.paragraf {
-  text-align: justify;
-  margin: auto 18px;
-  justify-self: center;
+.container2 div.submit {
+  text-align: right;
 }
+.container2 div.submit button {
+  background-color: black;
+  padding: 5px;
+  height: 30px;
+  width: 110px;
+  border: none;
+  border-radius: 25px;
+}
+.container2 div.submit button a.kirim {
+  color: rgb(221, 221, 221);
+}
+
+/* Awal Card Flex */

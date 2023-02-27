@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(231, 231, 231);
   margin: 0;
@@ -10,6 +13,14 @@ nav.nav {
   justify-content: space-between;
   height: 50px;
   margin: 0;
+}
+.home {
+  font-weight: bold;
+}
+section.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 div.kiri,
 div.kanan {
@@ -54,59 +65,95 @@ div.kanan {
   color: rgb(221, 221, 221);
   font-size: 12px;
 }
-/* Awal Form*/
 
-h3 {
-  text-align: center;
-  margin: 65px 65px 40px;
-}
-.container {
-  background-color: rgb(231, 231, 231);
+/* Awal Card */
+.container1 {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin: 100px 50px;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 50px;
+  width: 1000px;
+  box-shadow: 10px 2px 18px rgb(179, 179, 179);
 }
 .container2 {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 70%;
 }
-
-.container2 div {
-  margin: 10px;
+.container2 p {
+  text-align: justify;
+  font-size: 1rem;
 }
-input,
-select,
-textarea {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
+.container2 div button.contact {
+  width: 130px;
+  font-size: 1rem;
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px -6px #808080;
-}
-input,
-select {
-  height: 25px;
-}
-
-textarea {
-  resize: none;
-  height: 100px;
-}
-
-.container2 div.submit {
-  text-align: right;
-}
-.container2 div.submit button {
+  border-radius: 15px;
   background-color: black;
-  padding: 5px;
-  height: 30px;
-  width: 110px;
-  border: none;
-  border-radius: 25px;
+  padding: 5px 20px;
+  margin: 10px 10px 50px 0;
 }
-.container2 div.submit button a.kirim {
-  color: rgb(221, 221, 221);
+.container2 div button.contact a {
+  text-decoration: none;
+  color: rgb(242, 242, 242);
+}
+.container2 div a.unduh {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.container2 div.sosmed button {
+  border: none;
+  border-radius: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  margin-right: 10px;
+}
+.container2 div.sosmed button i {
+  font-size: 1rem;
+  color: white;
 }
 
-/* Awal Card Flex */
+.container3 {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.182);
+}
+
+.container3 h3,
+.container3 p {
+  margin: 5px 5px 0 5px;
+}
+
+.container3 p {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .container1 {
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 50px;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: fit-content;
+    padding: 50px;
+    /* width: 1000px; */
+    box-shadow: 10px 2px 18px rgb(179, 179, 179);
+  }
+}
