@@ -62,7 +62,7 @@ div.kanan {
   /* background-color: aquamarine; */
   display: flex;
   margin: auto;
-  width: 1000px;
+  width: 1100px;
   flex-direction: column;
   padding: 20px;
 }
@@ -136,14 +136,6 @@ h2 {
   color: gray;
 }
 
-input[type="checkbox"] {
-  /* appearance: none;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: white; */
-  border: none !important;
-}
 /* Punya Upload Image */
 .upload {
   /* background-color: brown; */
@@ -193,7 +185,7 @@ input[type="file"]::file-selector-button {
 #endDate,
 .paper,
 .card {
-  box-shadow: 0 8px 10px -2px gray;
+  box-shadow: 0 8px 9px -3px rgba(128, 128, 128, 0.661);
 }
 
 /* punya container preview */
