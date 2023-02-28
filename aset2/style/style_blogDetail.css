@@ -1,8 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
 /* Awal Navbar */
+* {
+  font-family: "Poppins", sans-serif;
+}
 body {
   background-color: rgb(231, 231, 231);
   margin: 0;
@@ -19,7 +18,6 @@ nav.nav {
 div.kiri,
 div.kanan {
   display: flex;
-  flex-direction: row;
 }
 
 div.kiri {
@@ -43,10 +41,10 @@ a {
   color: black;
 }
 div.kanan {
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
 }
-.kanan button {
+.kanan button.contactMe {
   background-color: black;
   padding: 5px;
   height: 30px;
@@ -54,10 +52,51 @@ div.kanan {
   border: none;
   border-radius: 5px;
 }
-
-.kanan button a {
+.kanan button.contactMe a {
   color: rgb(221, 221, 221);
   font-size: 12px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+#hamburger-navbar {
+  display: none;
+  background-color: rgb(173, 168, 168);
+  height: 140px;
+}
+#hamburger-navbar a {
+  /* margin: 20px; */
+  display: block;
+  text-align: center;
+}
+#hamburger-navbar :nth-child(3) span {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  height: 10px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Media Query Navbar */
+@media only screen and (max-width: 600px) {
+  .nav .kanan,
+  .nav .kiri .home,
+  .nav .kiri .project {
+    display: none;
+  }
+  #hamburger-menu {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  #hamburger-navbar a {
+    text-align: center;
+    height: 50px;
+  }
 }
 /* Akhir Navbar */
 
@@ -118,4 +157,11 @@ h4 {
   text-align: justify;
   margin: auto 18px;
   justify-self: center;
+}
+
+/* breakpoint */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+  }
 }

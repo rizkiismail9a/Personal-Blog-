@@ -1,7 +1,7 @@
-* {
-  box-sizing: border-box;
-}
 /* Awal Navbar */
+* {
+  font-family: "Poppins", sans-serif;
+}
 body {
   background-color: rgb(231, 231, 231);
   margin: 0;
@@ -18,7 +18,6 @@ nav.nav {
 div.kiri,
 div.kanan {
   display: flex;
-  flex-direction: row;
 }
 
 div.kiri {
@@ -42,10 +41,10 @@ a {
   color: black;
 }
 div.kanan {
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
 }
-.kanan button {
+.kanan button.contactMe {
   background-color: black;
   padding: 5px;
   height: 30px;
@@ -53,10 +52,51 @@ div.kanan {
   border: none;
   border-radius: 5px;
 }
-
-.kanan button a {
+.kanan button.contactMe a {
   color: rgb(221, 221, 221);
   font-size: 12px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+#hamburger-navbar {
+  display: none;
+  background-color: rgb(173, 168, 168);
+  height: 140px;
+}
+#hamburger-navbar a {
+  /* margin: 20px; */
+  display: block;
+  text-align: center;
+}
+#hamburger-navbar :nth-child(3) span {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  height: 10px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Media Query Navbar */
+@media only screen and (max-width: 600px) {
+  .nav .kanan,
+  .nav .kiri .home,
+  .nav .kiri .project {
+    display: none;
+  }
+  #hamburger-menu {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  #hamburger-navbar a {
+    text-align: center;
+    height: 50px;
+  }
 }
 /* Akhir Navbar */
 
@@ -94,7 +134,7 @@ h2 {
   padding: 0;
   border: none;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
 }
 
 /* Punya Waktu Pengerjaan */
@@ -124,7 +164,7 @@ h2 {
   width: 100%;
   height: 20px;
   border: none;
-  border: 5px;
+  border-radius: 5px;
   padding: 1px 0;
 }
 /* punya textarea */
@@ -152,7 +192,7 @@ h2 {
   display: flex;
   flex-direction: row;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   background-color: white;
   border: 1px solid white;
   margin-bottom: 20px;
@@ -189,7 +229,7 @@ input[type="file"]::file-selector-button {
 #endDate,
 .paper,
 .card {
-  box-shadow: 0 8px 9px -3px rgba(128, 128, 128, 0.661);
+  box-shadow: 0px 8px 9px -3px rgba(179, 179, 179, 0.661);
 }
 
 /* punya container preview */
@@ -241,10 +281,19 @@ div i {
   color: gray;
 }
 
+/* BreakPoint */
 @media screen and (max-width: 600px) {
   #containerCard {
     /* background-color: cornflowerblue; */
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .containerForm {
+    /* background-color: cadetblue; */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 15px;
   }
 }

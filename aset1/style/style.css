@@ -1,9 +1,7 @@
-* {
-  box-sizing: border-box;
-}
 body {
   background-color: rgb(231, 231, 231);
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 nav.nav {
   display: flex;
@@ -66,6 +64,47 @@ div.kanan {
   font-size: 12px;
 }
 
+#hamburger-menu {
+  display: none;
+}
+#hamburger-navbar {
+  display: none;
+  background-color: rgb(173, 168, 168);
+  height: 140px;
+}
+#hamburger-navbar a {
+  /* margin: 20px; */
+  display: block;
+  text-align: center;
+}
+#hamburger-navbar :nth-child(3) span {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  height: 10px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Media Query Navbar */
+@media only screen and (max-width: 600px) {
+  .nav .kanan,
+  .nav .kiri .home,
+  .nav .kiri .project {
+    display: none;
+  }
+  #hamburger-menu {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  #hamburger-navbar a {
+    text-align: center;
+    height: 50px;
+  }
+}
 /* Awal Card */
 .container1 {
   border: none;
@@ -77,7 +116,7 @@ div.kanan {
   align-items: center;
   justify-content: space-between;
   height: fit-content;
-  padding: 50px;
+  padding: 30px;
   width: 1000px;
   box-shadow: 10px 2px 18px rgb(179, 179, 179);
 }
@@ -89,6 +128,7 @@ div.kanan {
 .container2 p {
   text-align: justify;
   font-size: 1rem;
+  /* margin-right: 20px; */
 }
 .container2 div button.contact {
   width: 130px;
@@ -127,7 +167,7 @@ div.kanan {
   flex-direction: column;
   align-items: center;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.182);
 }
@@ -141,19 +181,96 @@ div.kanan {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
+/* Media Query Untuk Body */
+@media only screen and (max-width: 1000px) {
+  .container2 p {
+    width: 90%;
+    text-align: justify;
+  }
+}
+/* Media Query Untuk Container 2 */
+@media only screen and (max-width: 600px) {
   .container1 {
     border: none;
     border-radius: 5px;
     background-color: white;
     display: flex;
     flex-direction: column;
-    margin: 100px 50px;
+    margin: 100px 30px;
     /* align-items: center; */
     justify-content: space-between;
     height: fit-content;
-    padding: 50px;
+    padding: 20px;
     /* width: 1000px; */
-    box-shadow: 10px 2px 18px rgb(179, 179, 179);
+    box-shadow: 1px 2px 18px rgba(179, 179, 179, 0.507);
+  }
+  h1 {
+    text-align: left;
+  }
+  .container2 {
+    /* background-color: aqua; */
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 20px;
+    justify-content: center;
+    /* margin-right: 20px; */
+  }
+  .container2 p {
+    margin-right: 0;
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 50px;
+    /* background-color: beige; */
+  }
+  .container2 .contact-cv {
+    height: 65px;
+  }
+  .container2 div button.contact {
+    width: 80px;
+    font-size: 0.7rem;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    padding: 5px 20px;
+    margin: 10px 35px 50px 0;
+  }
+  .container2 div button.contact a {
+    text-decoration: none;
+    color: rgb(242, 242, 242);
+  }
+  .container2 div a.unduh {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+  }
+  .container2 div.sosmed {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  .container2 div.sosmed button {
+    border: none;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin-right: 10px;
+  }
+  .container2 div.sosmed button i {
+    font-size: 0.8rem;
+    color: white;
+  }
+  .container3 {
+    display: flex;
+    margin-bottom: 15px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.182);
   }
 }

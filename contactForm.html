@@ -10,6 +10,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="aset1/style/style_contactForm.css" />
   </head>
   <body>
@@ -22,9 +25,19 @@
           <div class="project"><a href="https://day-5-count-post-duration.vercel.app/">My Project</a></div>
         </div>
         <div class="kanan">
-          <button><a href="#terhubung">Contact Me</a></button>
+          <button class="contactMe"><a href="#terhubung">Contact Me</a></button>
+        </div>
+        <div id="hamburger-menu">
+          <button type="button" id="menu" style="background-color: transparent; border: none; cursor: pointer; margin-right: 0px" onclick="openHamburger()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
         </div>
       </nav>
+      <div id="hamburger-navbar">
+        <a href="index.html" style="color: black">Home</a>
+        <a href="blog-post.html" style="color: black">My Project</a>
+        <a><span>Contact Me</span></a>
+      </div>
     </section>
     <!-- Akhir Navbar -->
 
@@ -69,5 +82,6 @@
     <!-- Akhir Contact form -->
 
     <script src="aset1/script/script.js"></script>
+    <script src="aset2/script/scriptMedia.js"></script>
   </body>
 </html>

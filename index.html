@@ -10,6 +10,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="aset1/style/style.css" />
   </head>
   <body>
@@ -19,13 +22,23 @@
       <nav class="nav">
         <div class="kiri">
           <div class="logo"><i class="fa-solid fa-palette"></i></div>
-          <div class="home"><a href="#">Home</a></div>
+          <div class="home"><a href="#" style="font-weight: bold">Home</a></div>
           <div class="project"><a href="blog-post.html">My Project</a></div>
         </div>
         <div class="kanan">
-          <button><a href="contactForm.html">Contact Me</a></button>
+          <button class="contactMe"><a href="contactForm.html">Contact Me</a></button>
+        </div>
+        <div id="hamburger-menu">
+          <button type="button" id="menu" style="background-color: transparent; border: none; cursor: pointer; margin-right: 0px" onclick="openHamburger()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
         </div>
       </nav>
+      <div id="hamburger-navbar">
+        <a>Home</a>
+        <a href="blog-post.html" style="color: black">My Project</a>
+        <a href="contactForm.html" style="color: black"><span>Contact Me</span></a>
+      </div>
     </section>
     <!-- Akhir Navbar -->
     <!-- Akhir Navbar -->
@@ -43,7 +56,7 @@
             </p>
           </div>
           <!-- Awal tombol Unduh dan Contact -->
-          <div>
+          <div class="contact-cv">
             <button class="contact"><a href="contactForm.html">contact</a></button>
             <a class="unduh" href="#">Download CV <i class="fa-solid fa-download"></i></a><br />
           </div>
@@ -76,5 +89,6 @@
         <!-- Akhir foto -->
       </div>
     </section>
+    <script src="aset2/script/scriptMedia.js"></script>
   </body>
 </html>
