@@ -70,14 +70,14 @@ div.kanan {
 #hamburger-navbar {
   display: none;
   background-color: rgb(173, 168, 168);
-  height: 140px;
+  height: 180px;
 }
 #hamburger-navbar a {
   /* margin: 20px; */
   display: block;
   text-align: center;
 }
-#hamburger-navbar :nth-child(3) span {
+#hamburger-navbar :nth-child(4) span {
   background-color: black;
   color: white;
   padding: 10px;
@@ -91,7 +91,8 @@ div.kanan {
 @media only screen and (max-width: 600px) {
   .nav .kanan,
   .nav .kiri .home,
-  .nav .kiri .project {
+  .nav .kiri .project,
+  .nav .kiri .testimonial {
     display: none;
   }
   #hamburger-menu {

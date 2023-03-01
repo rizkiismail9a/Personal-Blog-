@@ -1,10 +1,7 @@
-/* Awal Navbar */
-* {
-  font-family: "Poppins", sans-serif;
-}
 body {
   background-color: rgb(231, 231, 231);
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 nav.nav {
   display: flex;
@@ -15,9 +12,16 @@ nav.nav {
   height: 50px;
   margin: 0;
 }
+
+section.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 div.kiri,
 div.kanan {
   display: flex;
+  flex-direction: row;
 }
 
 div.kiri {
@@ -34,17 +38,17 @@ a {
 }
 .logo {
   font-size: 20px;
-  color: rgb(173, 42, 42);
+  color: rgb(189, 56, 56);
 }
 .home a,
 .project a {
   color: black;
 }
 div.kanan {
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
   align-items: center;
 }
-.kanan button.contactMe {
+.kanan button {
   background-color: black;
   padding: 5px;
   height: 30px;
@@ -52,7 +56,8 @@ div.kanan {
   border: none;
   border-radius: 5px;
 }
-.kanan button.contactMe a {
+
+.kanan button a {
   color: rgb(221, 221, 221);
   font-size: 12px;
 }
@@ -99,70 +104,51 @@ div.kanan {
     height: 50px;
   }
 }
-/* Akhir Navbar */
 
-/* Awal Gambar dan Info */
-.judul {
-  display: flex;
-  justify-content: center;
-}
+/* Milik Card */
 h1 {
   text-align: center;
-  margin: 30px;
 }
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  /* background-color: aquamarine; */
-  margin: auto;
-  width: 1100px;
-  flex-wrap: wrap;
-}
-
-.gambar {
-  display: flex;
-  /* background-color: beige; */
-}
-
-.container .gambar img {
-  width: 600px;
-}
-
-.info {
-  font-size: 1.2rem;
-  /* background-color: bisque; */
-  width: 450px;
-}
-
-p i {
-  margin-right: 15px;
-  color: black;
-}
-
-.duration p,
-.equipment p {
-  color: rgb(133, 133, 133);
-}
-
-h4 {
-  margin-bottom: 0;
-}
-.equipment {
+  /* background-color: blueviolet; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100px;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px auto;
 }
-
-.paragraf {
-  text-align: justify;
-  margin: auto 18px;
-  justify-self: center;
+.container1 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 5px 15px 5px;
+  margin: 15px;
+  box-shadow: 0px 8px 9px -3px rgba(179, 179, 179, 0.661);
+}
+.container2 {
+  margin: 0;
+}
+.container2 :nth-child(1) {
+  width: 350px;
 }
 
 /* breakpoint */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1300px) {
   .container {
-    display: flex;
+    /* background-color: blueviolet; */
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .container {
+    /* background-color: blueviolet; */
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    margin: 50px auto;
   }
 }
