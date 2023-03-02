@@ -9,7 +9,7 @@ function openHamburger() {
     menuHamburger.style.display = "flex";
     menuHamburger.style.flexDirection = "column";
     menuHamburger.style.paddingTop = "15px";
-    menuHamburger.style.justifyContent = "space around";
+    menuHamburger.style.flexDirection = "column";
     isHamburgerOpen = true;
   }
 }

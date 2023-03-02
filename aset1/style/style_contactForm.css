@@ -10,7 +10,7 @@ nav.nav {
   display: flex;
   background-color: rgb(255, 255, 255);
   flex-direction: row;
-  padding: 0 50px 0;
+  padding: 20px 50px;
   justify-content: space-between;
   height: 50px;
   margin: 0;
@@ -27,6 +27,11 @@ div.kiri {
 a {
   text-decoration: none;
 }
+
+div.kiri a:hover {
+  font-weight: bold;
+}
+
 .logo,
 .home,
 .project {
