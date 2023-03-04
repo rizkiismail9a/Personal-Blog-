@@ -1,15 +1,15 @@
 class testimonial {
   constructor(image, comment) {
-    this.a = image;
-    this.b = comment;
+    this._image = image;
+    this._comment = comment;
   }
 
   get AmbilGambar() {
-    return this.a;
+    return this._image;
   }
 
   get ambilComment() {
-    return this.b;
+    return this._comment;
   }
 
   get html() {
@@ -27,20 +27,20 @@ class testimonial {
 class individuAuthor extends testimonial {
   constructor(image, comment, author) {
     super(image, comment);
-    this.c = author;
+    this._author = author;
   }
   get ambilAuthor() {
-    return this.c;
+    return this._author;
   }
 }
 
 class company extends testimonial {
   constructor(images, comment, company) {
     super(images, comment);
-    this.d = company;
+    this._company = company;
   }
   get ambilAuthor() {
-    return this.d + " company";
+    return this._company + " company";
   }
 }
 
