@@ -191,3 +191,27 @@ div.rating button {
     margin: 50px auto;
   }
 }
+@media only screen and (max-width: 546px) {
+  .container {
+    /* background-color: blueviolet; */
+    display: grid;
+    padding: 30px;
+    margin: 10px;
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+  }
+  .container .container1 {
+    margin: 10px;
+  }
+  div.rating {
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-around;
+    align-content: space-between;
+    width: fit-content;
+    flex-wrap: wrap;
+  }
+  div.rating button {
+    margin-top: 10px;
+  }
+}
