@@ -161,5 +161,11 @@ textarea {
 .container2 div.submit button a.kirim {
   color: rgb(221, 221, 221);
 }
+@media only screen and (max-width: 564px) {
+  div.container {
+    /* background-color: aqua; */
+    padding: 15px;
+  }
+}
 
 /* Awal Card Flex */

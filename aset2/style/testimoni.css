@@ -214,4 +214,7 @@ div.rating button {
   div.rating button {
     margin-top: 10px;
   }
+  .container2 :nth-child(1) {
+    width: 98%;
+  }
 }

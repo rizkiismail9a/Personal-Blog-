@@ -212,6 +212,7 @@ div.kanan {
   }
   h1 {
     text-align: left;
+    font-size: 1.3rem;
   }
   .container2 {
     /* background-color: aqua; */
@@ -228,6 +229,7 @@ div.kanan {
     justify-content: center;
     margin-bottom: 50px;
     /* background-color: beige; */
+    font-size: 0.8rem;
   }
   .container2 .contact-cv {
     height: 65px;
