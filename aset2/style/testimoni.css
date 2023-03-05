@@ -185,9 +185,9 @@ div.rating button {
 @media only screen and (max-width: 820px) {
   .container {
     /* background-color: blueviolet; */
-    display: grid;
+    display: flex;
     padding: 20px;
-    grid-template-columns: 1fr;
+    flex-wrap: wrap;
     margin: 50px auto;
   }
 }
