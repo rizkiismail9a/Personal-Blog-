@@ -15,7 +15,7 @@ const testimonialPromise = new Promise((resolve, reject) => {
 
 async function getAllTestimonials() {
   const response = await testimonialPromise;
-  console.log(response);
+  // console.log(response);
 
   let testimonial = "";
 
